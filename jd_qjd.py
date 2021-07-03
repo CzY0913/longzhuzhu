@@ -63,7 +63,7 @@ class getJDCookie(object):
     # 获取cookie
     def getCookie(self):
         global cookies
-        ckfile = self.getckfile()
+        ckfile = pwd + 'cookie.sh'
         try:
             if os.path.exists(ckfile):
                 with open(ckfile, "r", encoding="utf-8") as f:
